@@ -1,0 +1,35 @@
+ panel{
+    background-color: steelblue;
+    text-align: justify, center;
+    size: 20px;
+    color: blue; 
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-right: 50px; 
+    
+} 
+
+/* .myinfo {
+    padding-top: 150px;
+  border: 20px;
+    top: 100px;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    font-family: Arial, sans-serif;
+}  */
+
+h1{
+ font-family: serif; 
+ color: darkcyan;
+}
+h2{
+          background-color: rgb(85, 184, 250);
+          border: 2px solid rgb(231, 139, 240);
+}
