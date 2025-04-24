@@ -8,35 +8,47 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Volha Padlipskaya" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d3bfb1bb57.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <div class="panel">
+    <section>
       <ul>
         <h2>
-          <a href="#About" style="color: rgb(26, 6, 245)">About</a>
-          <a href="#Education" style="color: rgb(26, 6, 245)">Education</a>
-          <a href="#Experience" style="color: rgb(26, 6, 245)">Experience</a>
-          <a href="#Connect" style="color: rgb(26, 6, 245)">Connect</a>
+          <div class="navbar">
+            <a href="#About" style="color: rgb(26, 6, 245)">About</a>
+            <a href="#Education" style="color: rgb(26, 6, 245)">Education</a>
+            <a href="#Experience" style="color: rgb(26, 6, 245)">Experience</a>
+            <a href="#Connect" style="color: rgb(26, 6, 245)">Connect</a>
+          </div>
         </h2>
       </ul>
-    </div>
+    </section>
 
     <br />
     <h1>Volha Padlipskaya</h1>
 
-    <img src="img/mypic.jpg" alt="My photo" width="210" height="245" />
-    <div style="background-color: rgb(230, 240, 250)">
+    <div class="mycard">
       <section id="About">
         <h2>About me</h2>
+        <br />
         <p>
-          My name is Volha Padlipskaya. I'm originally from Belarus. I have
-          Economist Manager Diploma and Software Engineer Diploma.
-          <br />For a long time I worked at OJSC Belarusian Steel Works as a
-          software engineer. <br />
+          My name is <span>Volha Padlipskaya</span>. I'm originally from
+          Belarus. I have Economist Manager Diploma and Software Engineer
+          Diploma. <br />For a long time I worked at OJSC Belarusian Steel Works
+          as a software engineer. <br />
           In 2021, my family and I moved to the United States. <br />And this is
           the fourth year we have been living in Charlotte, NC.
         </p>
-
         <p>
           It's very difficult to adapt and get used to a new country, but I try
           to do my best as productively as possible. I am very open and friendly
@@ -54,9 +66,14 @@
           Dream. And I hope my plans and dreams will come true soon!
         </p>
       </section>
+      <img src="img/mypic.jpg" alt="My Photo" class="myphoto" />
+    </div>
 
+    <div class="card_education">
+      <img src="img/laptop.jpg" alt="Laptop image" class="laptop_img" />
       <section id="Education">
         <h2>Education</h2>
+        <br />
         <ol>
           <li>
             <strong>2000-2005</strong>
@@ -76,61 +93,52 @@
           <li><strong>2024-now</strong> CTD Intro to Programming</li>
         </ol>
       </section>
-
-      <section id="Experience">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>2005-2021</strong> a software engineer at OJSC Belarusian
-            Steel Works
-          </li>
-          <li>
-            <strong>2010-2021</strong> Maintenance of FI modul SAP ERP that
-            focuses on financial reporting and accounting management, <br />
-            writing instructions and templates, training in entering and viewing
-            information, uploading reports on debtors and creditors
-          </li>
-          <li>working with the ABAP-4 programming language</li>
-          <li>
-            writing small programms to calculate or download information on
-            Delphy programming language
-          </li>
-          <li>independent learning Photoshop, Figma, UX/UI designe</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>My projects</h2>
-        <ol>
-          <li>
-            <a href="https://volha83.github.io/cookies/">Cookies</a>
-          </li>
-          <li>
-            <a
-              href="https://www.figma.com/design/qT5HNvlFsvaJSAQIaQE4Rg/%D0%94%D0%97-%E2%84%964_%D0%90%D0%B9%D1%82%D0%B8%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-%D0%98%D0%BD%D1%82%D0%B5%D0%BD%D1%81%D0%B8%D0%B2--1---Copy-?t=vME4O6b2D0WhBuDb-0"
-              >Figma Project</a
-            >
-          </li>
-        </ol>
-      </section>
-
-      <section id="Connect">
-        <h2>Connect</h2>
-
-        <ul>
-          <ol>
-            <a href="https://github.com/volha83" target="_blank">My GitHub</a>
-          </ol>
-          <ol>
-            <a
-              href="https://www.linkedin.com/in/volha-padlipskaya-557b56341/"
-              target="_blank"
-              >My Linkedin</a
-            >
-          </ol>
-        </ul>
-      </section>
-      <br />
     </div>
+
+    <section id="Experience">
+      <h2>Experience</h2>
+      <br />
+      <ul>
+        <li>
+          <strong>2005-2021</strong> a software engineer at OJSC Belarusian
+          Steel Works
+        </li>
+        <li>
+          <strong>2010-2021</strong> Maintenance of FI modul SAP ERP that
+          focuses on financial reporting and accounting management, <br />
+          writing instructions and templates, training in entering and viewing
+          information, uploading reports on debtors and creditors
+        </li>
+        <li>working with the ABAP-4 programming language</li>
+        <li>
+          writing small programms to calculate or download information on Delphy
+          programming language
+        </li>
+        <li>independent learning Photoshop, Figma, UX/UI designe</li>
+      </ul>
+    </section>
+
+    <section id="Connect">
+      <h2>Connect</h2>
+      <br />
+      <ul>
+        <ol>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/volha83" target="_blank" class="icons"
+            >My GitHub</a
+          >
+        </ol>
+        <ol>
+          <i class="fa-brands fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/volha-padlipskaya-557b56341/"
+            target="_blank"
+            class="icons"
+            >My Linkedin</a
+          >
+        </ol>
+      </ul>
+    </section>
+    <br />
   </body>
 </html>
