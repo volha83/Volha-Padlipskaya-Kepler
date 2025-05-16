@@ -6,38 +6,57 @@
 body {
   font-family: "EB Garamond", serif;
   background-color: rgb(245, 253, 253);
-  width: 100%;
 }
 
-#Navbar {
-  background-color: rgb(62, 176, 252);
-  border: 2px solid darkblue;
-  margin: 0em;
+.open {
+  display: flex !important;
+}
+
+.name {
+  background-color: rgba(184, 222, 247, 0.776);
+  justify-items: center;
+  font-size: 1.2em;
   padding: 0.5em;
-  position: fixed;
-  width: 100%;
+  margin-top: 0;
+}
+  
+.navbar {
+  /* background-color: rgb(62, 176, 252); */
+  border: 2px solid darkblue;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
+.burger {
+  background-color: rgb(62, 176, 252);
+}
 
-  :hover {
-    color: rgb(11, 11, 73);
-    transform: translateY(-3px);
-  }
+.navbar ul {
+  display: flex;
+  color: rgb(7, 3, 253);
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar li {
+  font-weight: bold;
 }
 
 .navbar a {
-  color: rgb(7, 3, 253);
   text-decoration: none;
 }
 
+.navbar a:hover {
+  color: rgb(6, 6, 63);
+}
+
+/* .navbar li:hover {
+    transform: translateY(-3px);
+  } */
+
 h1 {
   color: rgb(53, 143, 245);
-  margin-top: 1em;
   text-align: center;
   text-shadow: 0.05em 0.03em #2e2e6b;
+  font-style: italic;
 }
 
 h2 {
@@ -63,7 +82,9 @@ p {
 #Experience,
 #Skills,
 #Projects,
-#Connect {
+#Connect, 
+#messagesForm, 
+#messages{
   margin: 1.5em 3em 1.5em 3em;
   border-radius: 0.5em;
 }
@@ -73,7 +94,9 @@ p {
 #Experience,
 #Skills,
 #Projects,
-#Connect {
+#Connect,
+#messagesForm,
+#messages {
   padding: 3em 3.5em;
   box-shadow: 0.4em 0.4em 0.4em #b6b5b5;
 }
@@ -122,25 +145,42 @@ p {
 .exp-name {
   display: flex;
   flex-direction: column;
+  grid-template-columns: 6em 1fr;
   gap: 0.3em;
 }
 
 #Skills {
-  background-color: rgb(234, 215, 243);
+  background-color: #FFC8DD;
   text-align: center;
-  /* background-color: #cdb4db; */
+  padding: 2em;
+}
+
+.allSkills {
+  list-style: none;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-direction: column-reverse;
+}
+
+.allSkills li {
+  /* background-color: #CDB4DB; */
+  background-color: #ebdcf4;
+  border-radius: 0.5em;
+  border: 2px solid #bdb4b4;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
 #Projects {
   text-align: center;
   background-color: rgb(186, 197, 235);
-  /* background-color: #FFC8DD; */
 }
 
 #Connect {
   text-align: center;
   background-color: rgb(160, 249, 224);
-  /* background-color: #FFAFCC; */
 }
 
 .connect-icons {
@@ -149,14 +189,12 @@ p {
 }
 
 .link {
-  /* text-decoration: none; */
   color: rgb(11, 11, 98);
   display: none;
 }
 
 .link:hover {
   color: rgb(30, 138, 232);
-  /* font-weight: bold; */
 }
 
 .fa {
@@ -179,3 +217,45 @@ p {
 .fa-envelope:hover {
   transform: translateY(-3px);
 }
+
+#messagesForm, #messages {
+  text-align: center;
+  background-color: rgb(234, 215, 243);
+}
+
+.but_submit:hover {
+  transform: translateY(-2px);
+  background-color: #8b8bdd;
+}
+
+footer {
+  background-color: rgba(184, 222, 247, 0.776);
+  justify-items: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+  padding: 1em;
+  
+}
+
+#removeB, #editB {
+  background-color: rgb(250, 199, 237);
+  border-radius: 0.4em;
+  border: 2px solid rgb(206, 126, 186);
+}
+
+#removeB:hover {
+    background-color: rgb(253, 144, 226);
+    transform: translateY(-1px);
+  }
+#editB:hover {
+    background-color: rgb(253, 144, 226);
+    transform: translateY(-1px);
+}
+
+#newMessage {
+  list-style: none;
+  color: #565656;
+}
+
+
+
